@@ -38,7 +38,7 @@ const Newsletter = () => {
           
           {/* Text Description */}
           <div className="text-white mb-6">
-            <h2 className="text-xl font-bold mb-2">Stay Telepathic</h2>
+            <h2 className="text-xl font-bold mb-2">Stay Suos</h2>
             <p className="text-sm text-gray-200">
               Input your electronic mail address here to receive the latest dispatches from our Corporate Headquarters.
             </p>
@@ -54,13 +54,13 @@ const Newsletter = () => {
                 <input
                   type="radio"
                   name="region"
-                  value="NORTH AMERICA"
-                  checked={region === 'NORTH AMERICA'}
-                  onChange={() => setRegion('NORTH AMERICA')}
+                  value="INDIA"
+                  checked={region === 'SOUTH ASIA'}
+                  onChange={() => setRegion('SOUTH ASIA')}
                   className="form-radio h-4 w-4 bg-transparent border-gray-400 text-white checked:bg-white checked:border-white focus:ring-offset-2 focus:ring-1 focus:ring-white"
                   style={{ accentColor: 'white', backgroundColor: darkBackgroundColor, borderColor: 'gray' }}
                 />
-                <span className="uppercase tracking-wider">North America</span>
+                <span className="uppercase tracking-wider">SOUTH ASIA</span>
               </label>
 
               {/* International */}
