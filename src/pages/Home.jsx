@@ -1,0 +1,10 @@
+import React from 'react'
+import Hero from '../components/Hero.jsx'
+import FeatureStrip from '../components/FeatureStrip.jsx'
+import Categories from '../components/Categories.jsx'
+import Bestsellers from '../components/Bestsellers.jsx'
+import CollectionBanner from '../components/CollectionBanner.jsx'
+import Lookbook from '../components/Lookbook.jsx'
+import Sustainability from '../components/Sustainability.jsx'
+import Newsletter from '../components/Newsletter.jsx'
+export default function Home(){return(<div><Hero/><div className="mt-6"><FeatureStrip/></div><Categories/><Bestsellers/><CollectionBanner/><Lookbook/><Sustainability/><Newsletter/></div>)}

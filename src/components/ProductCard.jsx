@@ -1,0 +1,5 @@
+import React from 'react'
+import {ShoppingBag} from 'lucide-react'
+import {motion} from 'framer-motion'
+import StarRating from './StarRating.jsx'
+export default function ProductCard({p}){return(<motion.div initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true}} className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition-shadow"><div className="relative aspect-[4/5] overflow-hidden"><img src={p.img} alt={p.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"/><button className="absolute bottom-3 left-3 right-3 inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900/90 text-white py-2 text-sm opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all"><ShoppingBag className="h-4 w-4"/> Add to cart</button></div><div className="p-4"><div className="flex items-center justify-between gap-2"><h3 className="text-sm font-medium tracking-tight">{p.name}</h3><span className="text-sm font-semibold">₹{p.price.toLocaleString('en-IN')}</span></div><div className="mt-2"><StarRating value={p.rating}/></div></div></motion.div>)}
